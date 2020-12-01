@@ -1,0 +1,7 @@
+OJO la gramatica y el fichero se deben llamar igual
+
+antlr4 ejemploGramatica.g4
+javac -cp antlr-4.8-complete.jar ejemploGramatica*.java
+grun ejemploGramatica prog -gui
+100+2*34
+Ctrl+Z (Ctrl+D in unix)

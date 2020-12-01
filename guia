@@ -1,0 +1,9 @@
+https://www.baeldung.com/java-antlr
+
+1- creamos maven project con el plugin maven y la dependencia, como se muestra
+2- creamos la gramática y la añadimos al directorio src/main/antlr4 (ojo, con la estructura de paquetes que queremos que tenga, por ejemplo en org/prueba)
+3- ejecutamos "mvn package", donde nos crea sources en "target/generated-sources/antlr4"
+4- en el pom, añadimos también el build-helper-maven-plugin para apuntar a esos sources
+5- he tenido que hacer el "mvn package" para que incluyera los fuentes desde eclipse
+6- OJO, el nodo "Raíz" de la gramática es lo que tenemos que invocar desde el parser
+7- creamos nuestro Listener, que tiene que implementar MongoListener
